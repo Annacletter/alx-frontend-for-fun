@@ -12,7 +12,7 @@ import re
 import hashlib
 
 def print_usage():
-    print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
+    print('Usage: ./markdown2html.py README.md README.html', file=sys.stderr)
 
 def print_missing(filename):
     print('Missing {}'.format(filename), file=sys.stderr)
@@ -100,4 +100,3 @@ if __name__ == '__main__':
             if paragraph:
                 html.write('</p>\n')
     exit(0)
-
